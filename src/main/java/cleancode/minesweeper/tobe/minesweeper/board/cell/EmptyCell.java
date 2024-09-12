@@ -3,7 +3,6 @@ package cleancode.minesweeper.tobe.minesweeper.board.cell;
 public class EmptyCell implements Cell {
 
 
-
     private final CellState cellState = CellState.initialize();
 
     @Override
@@ -35,7 +34,7 @@ public class EmptyCell implements Cell {
 
     @Override
     public boolean isChecked() {
-        return cellState.isChecked();
+        return cellState.isOpened();
     }
 
     @Override
